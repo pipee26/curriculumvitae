@@ -1,0 +1,364 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    link(rel='stylesheet', href='stylesheets/default.css')
+    link(rel='stylesheet', href='stylesheets/layout.css')
+    link(rel='stylesheet', href='stylesheets/media-queries.css')
+    link(rel='stylesheet', href='stylesheets/magnific-popup.css')
+    //
+      Script
+      ==================================================
+    script(src='javascripts/modernizr.js')
+    //
+      Favicons
+      ==================================================
+    link(rel='shortcut icon', href='favicon.png')
+  body
+    //
+      Header
+      ==================================================
+    header#home
+      nav#nav-wrap
+        a.mobile-btn(href='#nav-wrap', title='Show navigation') Show navigation
+        a.mobile-btn(href='#', title='Hide navigation') Hide navigation
+        ul#nav.nav
+          li.current
+            a.smoothscroll(href='#home') Inicio
+          li
+            a.smoothscroll(href='#about') Acerca de
+          li
+            a.smoothscroll(href='#resume') Informacion
+          li
+            a.smoothscroll(href='#portfolio') Trabajos
+          li
+            a.smoothscroll(href='#testimonials') Mas
+          li
+            a.smoothscroll(href='#contact') Contacto
+        // end #nav
+      // end #nav-wrap
+      .row.banner
+        .banner-text
+          h1.responsive-headline Felipe de Jesus Flores Ramirez
+          h3
+            | Soy estudiante de ingenieria en sistemas computacionales 
+            span programador
+            | , 
+            span tester
+            |  y 
+            span tecnico en computacion
+            |  buscando mejorar la calidad de las paginas web, asi como 
+            |                 hacer mas facil e intuitiva la navegacion por sitios web.
+            hr
+            ul.social
+              li
+                a(href='https://www.facebook.com/pipee.phenix.3')
+                  i.fa.fa-facebook
+              li
+                a(href='https://twitter.com/login?lang=es')
+                  i.fa.fa-twitter
+              li
+                a(href='https://accounts.google.com/signin/v2/sl/pwd?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
+                  i.fa.fa-google-plus
+              li
+                a(href='#')
+                  i.fa.fa-linkedin
+              li
+                a(href='#')
+                  i.fa.fa-instagram
+              li
+                a(href='#')
+                  i.fa.fa-dribbble
+              li
+                a(href='#')
+                  i.fa.fa-skype
+      p.scrolldown
+        a.smoothscroll(href='#about')
+          i.icon-down-circle
+    // Header End
+    //
+      About Section
+      ==================================================
+    section#about
+      .row
+        .three.columns
+          img.profile-pic(src='images/profilepic.jpg', alt='')
+        .nine.columns.main-col
+          h2 Acerca de mi:
+          p
+            | Soy una persona proactiva, que siempre busca superarse personalmente y educativamente, la responsabilidad forma
+            | parte de mi dia a dia. No suelo conformarme con el primer resultado positivo buscando asi otras alternativas para
+            | siempre tener un plan de contingencia.
+          .row
+            .columns.contact-details
+              h2 Detalles de contacto
+              p.address
+                span Felipe Flores R.
+                br
+                span
+                  | La venta #17 Col.Infonavit
+                  br
+                  | 						         Texistepec, Ver 96180 Mx
+                br
+                span (924)110-4522
+                br
+                span felipe.ramjesflo@gmail.com
+            //
+              <div class="columns download">
+              <p>
+              <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+              </p>
+              </div>
+          // end row
+        // end .main-col
+    // About Section End
+    //
+      Resume Section
+      ==================================================
+    section#resume
+      //
+        Education
+        -----------------------------------------------
+      .row.education
+        .three.columns.header-col
+          h1
+            span Educacion
+        .nine.columns.main-col
+          .row.item
+            .twelve.columns
+              h3 Instituto Tecnologico Superior de Acayucan
+              p.info
+                | ISC 
+                span •
+                em.date 2014-2018
+              p
+                | La carrera de Ingenieria en sistemas omputacionales esta siendo cursada y dara fin en diciembre
+                | del presente año, lo cual le da una duracion de 9 semestres (4 años y medio).
+          // item end
+          .row.item
+            .twelve.columns
+              h3 Cursos de mantenimiento preventivo y Correctivo
+              p.info
+                | Tec. Inf. 
+                span •
+                em.date 2017-2018
+              p
+                | Impartido por ingenieros que contaban con acreditacione para poder impartir el curso de tecnico en informatica
+                | con duracion de un año y recibiendo un diploma validado ante la SEP.
+          // item end
+        // main-col end
+      // End Education
+      //
+        Work
+        -----------------------------------------------
+      .row.work
+        .three.columns.header-col
+          h1
+            span Experiencia
+        .nine.columns.main-col
+          .row.item
+            .twelve.columns
+              h3 CPU Active
+              p.info
+                | Mantenimiento 
+                span •
+                em.date febrero 2016 - Presente
+              p
+                | se realizan mantenimiento preventivo y correctivo a computadoras, asi como actualizaciones o cambios a
+                | necesidad del cliente
+          // item end
+        // main-col end
+      // End Work
+      //
+        Skills
+        -----------------------------------------------
+      .row.skill
+        .three.columns.header-col
+          h1
+            span Habilidades
+        .nine.columns.main-col
+          p
+            | Durante el curso de la carrera se procura que el alumno  sea capaz de concer y saber dar uso a distintas
+            | herramientas para un optimo desarrollo de su ambito laboral. De este modo a continuacion se mencionaran
+            | las herramientas asi como el conocimiento que se les tiene.
+          .bars
+            ul.skills
+              li
+                span.bar-expand.photoshop
+                em Photoshop
+              li
+                span.bar-expand.illustrator
+                em PHP
+              li
+                span.bar-expand.wordpress
+                em Base de datos
+              li
+                span.bar-expand.css
+                em CSS
+              li
+                span.bar-expand.html5
+                em HTML5
+              li
+                span.bar-expand.jquery
+                em Java
+          // end skill-bars
+        // main-col end
+      // End skills
+    // Resume Section End
+    //
+      Portfolio Section
+      ==================================================
+    section#portfolio
+      .row
+        .twelve.columns.collapsed
+          h1 Algunos de mis trabajos.
+          // portfolio-wrapper
+          #portfolio-wrapper.bgrid-quarters.s-bgrid-thirds.cf
+            .columns.portfolio-item
+              .item-wrap
+                a(href='#modal-01', title='')
+                  img(alt='', src='images/app.png')
+                  .overlay
+                    .portfolio-item-meta
+                      h5 Apprendiendo
+                      p Index
+                  .link-icon
+                    i.icon-plus
+            // item end
+            .columns.portfolio-item
+              .item-wrap
+                a(href='#modal-02', title='')
+                  img(alt='', src='images/app2.png')
+                  .overlay
+                    .portfolio-item-meta
+                      h5 Apprendiendo
+                      p Bloques
+                  .link-icon
+                    i.icon-plus
+            // item end
+            .columns.portfolio-item
+              .item-wrap
+                a(href='#modal-03', title='')
+                  img(alt='', src='images/app3.png')
+                  .overlay
+                    .portfolio-item-meta
+                      h5 Music
+                      p Trap
+                  .link-icon
+                    i.icon-plus
+            // item end
+            .columns.portfolio-item
+              .item-wrap
+                a(href='#modal-04', title='')
+                  img(alt='', src='images/app4.png')
+                  .overlay
+                    .portfolio-item-meta
+                      h5 Apprendiendo v2
+                      p index
+                  .link-icon
+                    i.icon-plus
+            // item end
+          // portfolio-wrapper end
+        // twelve columns end
+        //
+          Modal Popup
+          ---------------------------------------------------------------
+        #modal-01.popup-modal.mfp-hide
+          img.scale-with-grid(src='images/app.png', alt='')
+          .description-box
+            h4 Apprendiendo v1
+            p
+              | Primera version de la plataforma educativa apprendiendo para alumnos de nivel primaria.
+            // <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+          .link-box
+            // <a href="http://localhost/apprendiendo/">Visualizar</a>
+            a.popup-modal-dismiss Cerrar
+        // modal-01 End
+        #modal-02.popup-modal.mfp-hide
+          img.scale-with-grid(src='images/app2.png', alt='')
+          .description-box
+            h4 BLoques
+            p
+              | Uno de los apartados de la primera version donde podemos elegir entre las distintas actividades con
+              | las que se cuenta.
+            // <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
+          .link-box
+            // <a href="http://www.behance.net">Details</a>
+            a.popup-modal-dismiss Cerrar
+        // modal-02 End
+        #modal-03.popup-modal.mfp-hide
+          img.scale-with-grid(src='images/app3.png', alt='')
+          .description-box
+            h4 Musica
+            p
+              | Protipo de sitio web para dar a conocer noticias acerca de tus generos favoritos.
+            // <span class="categories"><i class="fa fa-tag"></i>Branding</span>
+          .link-box
+            // <a href="http://www.behance.net">Details</a>
+            a.popup-modal-dismiss Cerrar
+        // modal-03 End
+        #modal-04.popup-modal.mfp-hide
+          img.scale-with-grid(src='images/app4.png', alt='')
+          .description-box
+            h4 Apprendiendo v2
+            p
+              | Resultado final de la plataforma educativa apprendiendo para aprendizaje de niños de primaria.
+            // <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+          .link-box
+            // <a href="http://www.behance.net">Details</a>
+            a.popup-modal-dismiss Cerrar
+      // row End
+    // Portfolio Section End
+    //
+      footer
+      ==================================================
+    footer
+      .row
+        .twelve.columns
+          ul.social-links
+            li
+              a(href='#')
+                i.fa.fa-facebook
+            li
+              a(href='#')
+                i.fa.fa-twitter
+            li
+              a(href='#')
+                i.fa.fa-google-plus
+            li
+              a(href='#')
+                i.fa.fa-linkedin
+            li
+              a(href='#')
+                i.fa.fa-instagram
+            li
+              a(href='#')
+                i.fa.fa-dribbble
+            li
+              a(href='#')
+                i.fa.fa-skype
+          ul.copyright
+            li © Copyright 2014 CeeVee
+            li
+              | Design by 
+              a(title='Styleshout', href='http://www.styleshout.com/') Styleshout
+        #go-top
+          a.smoothscroll(title='Back to Top', href='#home')
+            i.icon-up-open
+    // Footer End
+    //
+      Java Script
+      ==================================================
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="javascripts/jquery-1.10.2.min.js"><\\/script>')
+    script(type='text/javascript', src='javascripts/jquery-migrate-1.2.1.min.js')
+    script(src='javascripts/jquery.flexslider.js')
+    script(src='javascripts/waypoints.js')
+    script(src='javascripts/jquery.fittext.js')
+    script(src='javascripts/magnific-popup.js')
+    script(src='javascripts/init.js')
+
